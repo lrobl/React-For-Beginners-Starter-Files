@@ -3,9 +3,9 @@ tasks:
       echo 'Installing dependencies.'
       cd catch-of-the-day
       npm install
-      # npx -y install-peerdeps --dev eslint-config-wesbos
     command: |
       echo 'Running the dev app'
+      mv .eslintrc ./catch-of-the-day/
       cd catch-of-the-day
       npm run dev
 ports:
