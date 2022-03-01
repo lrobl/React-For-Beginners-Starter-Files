@@ -1,14 +1,9 @@
-workspaceLocation: "./catch-of-the-day"
 tasks:
   - init: |
       echo 'Installing dependencies.'
-      cd catch-of-the-day
       npm install
     command: |
       echo 'Running the dev app'
-      mv .eslintrc ./catch-of-the-day/
-      mv .vscode ./catch-of-the-day/
-      cd catch-of-the-day
       npm run dev
 ports:
   - port: 3000
